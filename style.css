@@ -1,0 +1,186 @@
+/* globals */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+/* top-most-section */
+.top{
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+  .logo img{
+    width: 180px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    z-index: 2;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+    padding-left: 6rem;
+
+
+  }
+  .text h1{
+      margin-bottom: 10px;
+      z-index: 2;
+      color: black;
+  }
+  .text p{
+      line-height: 1.4;
+      z-index: 2;
+  }
+
+.showcase{
+    background: url('images/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}   
+.showcase:hover{
+filter: blur(3px);
+}
+.container:hover{
+    filter: blur(1px);
+    color: rgb(13, 240, 81);
+    font-weight: 800;
+    font-style: italic;
+    
+}
+
+
+
+/* main-middle-part */
+.main{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    max-width: 75%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* about-content-part */
+.content{
+    max-width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    justify-content: center;
+}
+
+.about{
+    background-color: #fff;
+    color: rgb(22, 21, 21);
+    margin-top: 20px;
+    padding: 30px 0;
+}
+.about h2,.about p{
+    text-align: left;
+}
+.about h2{
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+footer{
+    padding: 24px;
+    text-align: center;
+}
+
+
+/* mobile-responsive-part */
+@media (max-width:700px) {
+    .showcase{
+        height: 80vh;
+        padding-bottom:  0;
+        margin-bottom: 0;
+    }   
+    .top{
+    height: 83vh;
+    }
+    
+    .logo img{
+        width: 110px;
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        z-index: 2;
+      }
+      .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12rem;
+        padding-left: 2.4rem;
+    
+      }
+      .main{
+          grid-template-columns: 1fr;
+          max-width: 40%;
+      }
+
+      .content{
+          grid-template-columns: 1fr;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+      .about h2,.about p{
+          margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+
+    .showcase{
+        height: 80vh;
+        padding-bottom:  0;
+        margin-bottom: 0;
+    }   
+    .top{
+    height: 83vh;
+    }
+    
+    .logo img{
+        width: 90px;
+        position: absolute;
+        top: 8%;
+        left: 40%;
+        z-index: 2;
+      }
+      .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+        padding-left: 2.8rem;
+    
+      }
+}
